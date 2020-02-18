@@ -1,4 +1,4 @@
-all: bin doc 
+all: bin doc cppcheck
 
 bin: main.o 
 	gcc main.o -o is_armstrong_number -lm 
