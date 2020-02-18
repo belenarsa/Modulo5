@@ -15,3 +15,6 @@ clean-doc:
 doc: clean-doc
 	doxygen	
 
+cppcheck:
+	cppcheck --enable=all --inconclusive --error-exitcode=1 *.c
+
