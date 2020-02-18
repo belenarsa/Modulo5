@@ -16,5 +16,5 @@ doc: clean-doc
 	doxygen	
 
 cppcheck:
-	cppcheck --enable=all --inconclusive --error-exitcode=1 --xml --xml-version=2 SOURCE_DIRECTORY 2>cppcheck.xml *.c
+	cppcheck --enable=all --inconclusive --error-exitcode=1 --xml --xml-version=2 . 2>cppcheck.xml 
 
