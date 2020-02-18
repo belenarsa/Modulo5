@@ -85,11 +85,11 @@ void push(int m){
 }
 
 int pop(){   
-	int j;   
 	if(top==-1)
 		return(top);   
 	else   
 	{      
+		int j;
 		j=stack[top];      
 		top--;      
 		return(j);   
