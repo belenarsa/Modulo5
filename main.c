@@ -68,7 +68,7 @@ int is_armstrong_number(int numb){
 	}numb=temp;   
 	value=0; 
 	while(top >=0)   {      
-	i	int j;
+		int j;
 		j=pop();      
 		value=value+pow(j,count);   
 	}   
