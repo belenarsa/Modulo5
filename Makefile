@@ -1,4 +1,4 @@
-all: bin doc cppcheck
+all: bin doc cppcheck-xml
 
 bin: main.o 
 	gcc main.o -o is_armstrong_number -lm 
@@ -15,6 +15,8 @@ clean-doc:
 doc: clean-doc
 	doxygen	
 
-cppcheck:
+cppcheck-xml:
 	cppcheck --enable=all --inconclusive --xml --xml-version=2 . 2> cppcheck.xml 
+cppcheck:
+	cppcheck --enable=all --inconclusive *.c
 
