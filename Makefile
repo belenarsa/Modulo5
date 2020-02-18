@@ -1,7 +1,7 @@
 all: bin doc 
 
 bin: main.o 
-	gcc main.o -o bin/is_armstrong_number -lm 
+	gcc main.o -o is_armstrong_number -lm 
 main.o : main.c
 	gcc -c main.c -o main.o
 clean: clean-doc clean-obj clean-bin
@@ -9,7 +9,7 @@ clean: clean-doc clean-obj clean-bin
 clean-obj:
 	rm -f *.o 
 clean-bin:
-	rm -f bin/*
+	rm -f is_armstrong_number 
 clean-doc:
 	rm -rf html latex
 doc: clean-doc
